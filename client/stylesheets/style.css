@@ -1,0 +1,85 @@
+*{
+  letter-spacing: 1.5px;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.panel-heading h4 {
+  color: white
+}
+
+small.pull-right {
+  position: relative;
+  top: 15px;
+  font-size: 30px;
+}
+
+.blog-search {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  pointer-events: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.blog-filter.jumbotron {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#votes, #dates, #authors, #categories {
+  height: 34px;
+  padding: 6px 30px 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 12%;
+}
+
+.fa-sort {
+  position: relative;
+  right: 24px;
+  pointer-events: none;
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.post-content p {
+  word-wrap: break-word;
+}
+
+.post-votes .fa-thumbs-o-up:hover {
+  color: #3a87ad;
+  cursor: pointer;
+}
+
+.post-votes .fa-thumbs-o-down:hover {
+  color: #b94a48;
+  cursor: pointer;
+}
+
+.single-post-title {
+  margin: 0;
+}
+
+.single-post-content {
+  white-space: pre-line;
+}
+
+.single-post-thumbnail {
+  float: left;
+  margin: 25px 20px 5px 0px;
+  max-width: 300px;
+}

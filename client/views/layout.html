@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='blogApp'>
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Blog App</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-r/qnS4YZBLuBSKeVc+sM4eUYUiJMFhkHfx1nwlErHhTd+NgeJlN/NiiTd6jbKJzm" crossorigin="anonymous"> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <base href="/">
+</head>
+<body>
+  <blog-nav></blog-nav>
+  <div class="container">
+    <div class='page-header'>
+      <h1>
+        <em class='text-primary'>Angular Blog <i class='fa fa-pencil-square-o fa-lg' style="margin-left: 10px;"></i></em>
+        <small class='pull-right'>
+          <i class='fa fa-facebook text-info'></i>
+          <i class='fa fa-twitter text-default'></i>
+          <i class='fa fa-instagram text-success'></i>
+          <i class='fa fa-youtube text-danger'></i>
+          <i class='fa fa-google-plus text-warning'></i>
+        </small>    
+      </h1>
+    </div>
+    <div class="row">
+      <div ng-view></div>
+      <blog-sidebar></blog-sidebar>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
+  <script src="/javascripts/services.js"></script>
+  <script src="/javascripts/filters.js"></script>
+  <script src="/javascripts/routes.js"></script>
+  <script src="/javascripts/app.js"></script>
+  <script src='/javascripts/components/blogs/blogs.controller.index.js'></script>
+  <script src='/javascripts/components/blogs/blogs.controller.show.js'></script>
+  <script src='/javascripts/components/blogs/blogs.controller.new.js'></script>
+  <script src='/javascripts/components/blogs/blogs.controller.edit.js'></script>
+  <script src='/javascripts/components/nav/nav.directive.js'></script>
+  <script src='/javascripts/components/sidebar/sidebar.directive.js'></script>
+</body>
+</html>
